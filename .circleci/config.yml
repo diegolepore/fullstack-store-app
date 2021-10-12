@@ -32,19 +32,16 @@ jobs:
           name: Frontend Test
           command: |
             npm run frontend:test
-      # - run:
-      #     name: Lint
-      #     command: |
-      #       npm run lint
-      # - run:
-      #     name: Test
-      #     command: |
-      #       npm run test
-      # - run:
-      #     name: Build
-      #     command: |
-      #       npm run build
-      # - run:
-      #     name: Deploy to S3 bucket
-      #     command: |
-      #       npm run deploy
+      - run:
+          name: Backend Test
+          command: |
+            npm run backend:test
+      - run:
+          name: Deploy Frontend to S3 bucket
+          command: |
+            npm run frontend:deploy
+      - run:
+          name: Deploy Backend to EB
+          command: |
+            npm run backend:deploy
+
