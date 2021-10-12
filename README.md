@@ -7,6 +7,9 @@
 ### Infrasctructure diagram
 ![Infrastructure diagram](https://raw.githubusercontent.com/diegolepore/fullstack-store-app/master/screenshots/architecture-diagram.png)
 
+### Basic pipeline diagram
+![Basic pipeline diagram](https://raw.githubusercontent.com/diegolepore/fullstack-store-app/master/screenshots/pipeline-flow-basic-overview.png)
+
 The documentation folder containing the pages on different topics can be found here: https://github.com/diegolepore/fullstack-store-app/tree/master/documentation 
 
 Inside the documentation folder you will find the following files:
