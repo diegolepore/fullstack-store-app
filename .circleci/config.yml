@@ -21,38 +21,38 @@ jobs:
             sudo apt-get -y -qq update
             sudo apt-get install python3-pip python3-dev build-essential
             sudo pip3 install awsebcli
-      # - run:
-      #     name: Frontend Install
-      #     command: |
-      #       npm run frontend:install
-      # - run:
-      #     name: Backend Install
-      #     command: |
-      #       npm run backend:install
-      # - run:
-      #     name: Frontend Lint
-      #     command: |
-      #       npm run frontend:lint
-      # - run:
-      #     name: Backend Lint
-      #     command: |
-      #       npm run backend:lint
-      # - run:
-      #     name: Frontend Test
-      #     command: |
-      #       npm run frontend:test
-      # - run:
-      #     name: Backend Test
-      #     command: |
-      #       npm run backend:test
-      # - run:
-      #     name: Frontend Build
-      #     command: |
-      #       npm run frontend:build
-      # - run:
-      #     name: Deploy Frontend to S3 bucket
-      #     command: |
-      #       npm run frontend:deploy
+      - run:
+          name: Frontend Install
+          command: |
+            npm run frontend:install
+      - run:
+          name: Backend Install
+          command: |
+            npm run backend:install
+      - run:
+          name: Frontend Lint
+          command: |
+            npm run frontend:lint
+      - run:
+          name: Backend Lint
+          command: |
+            npm run backend:lint
+      - run:
+          name: Frontend Test
+          command: |
+            npm run frontend:test
+      - run:
+          name: Backend Test
+          command: |
+            npm run backend:test
+      - run:
+          name: Frontend Build
+          command: |
+            npm run frontend:build
+      - run:
+          name: Deploy Frontend to S3 bucket
+          command: |
+            npm run frontend:deploy
       - run:
           name: Deploy Backend to EB
           command: |
