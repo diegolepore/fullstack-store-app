@@ -1,6 +1,6 @@
+/* eslint-disable no-undef */
 // import { Product, ProductStore as store } from '../../models/product'
 const store = require('../../models/product').ProductStore
-const {describe, it, expect} = require('jasmine')
 
 const product = {
 	name: 'Skateboard',

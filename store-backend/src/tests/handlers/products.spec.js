@@ -1,6 +1,6 @@
+/* eslint-disable no-undef */
 const supertest =  require('supertest')
 const app = require('../../../server')
-const {describe, it, expect, beforeAll, afterAll} = require('jasmine')
 
 let access_token = ''
 let userId = 0

@@ -1,7 +1,7 @@
+/* eslint-disable no-undef */
 const supertest =  require('supertest')
 const app = require('../../../server')
 const jwt = require('jsonwebtoken')
-const {describe, it, expect} = require('jasmine')
 
 const request = supertest(app)
 const user = {

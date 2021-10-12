@@ -1,6 +1,6 @@
+/* eslint-disable no-undef */
 // import { User, UserStore as store } from '../../models/user'
 const store = require('../../models/user').UserStore
-const {describe, it, expect} = require('jasmine')
 
 let userId = 0
 const user = {

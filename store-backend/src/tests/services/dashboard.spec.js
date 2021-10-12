@@ -1,9 +1,9 @@
+/* eslint-disable no-undef */
 const DashboardQueries = require('../../services/dashboard').DashboardQueries
 // import { User } from '../../models/user'
 const supertest =  require('supertest')
 const app = require('../../../server')
 const jwt = require('jsonwebtoken')
-const {describe, it, expect, beforeAll, afterAll} = require('jasmine')
 
 let access_token = ''
 let userFromJWT = {}

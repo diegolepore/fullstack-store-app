@@ -1,7 +1,7 @@
+/* eslint-disable no-undef */
 // import { Order } from '../../models/order'
 const supertest =  require('supertest')
 const app = require('../../../server')
-const {describe, it, expect, beforeAll, afterAll} = require('jasmine')
 
 let access_token = ''
 let userId = 0
