@@ -16,7 +16,7 @@
     "migrate:production": "db-migrate --env production up",
     "migrate:test-aws": "db-migrate --env test_aws up",
     "migrate:dev": "db-migrate --env dev up",
-    "deploy": "chmod +x ./bin/deploy.sh && ./bin/deploy.sh"
+    "deploy": "eb delpoy storefront-backend-dev"
   },
   "keywords": [],
   "author": "",
