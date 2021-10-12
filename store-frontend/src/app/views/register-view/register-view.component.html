@@ -1,0 +1,27 @@
+<main class="form-signin text-center">
+  <form #registerForm="ngForm" [formGroup]="form" (submit)="submitRegister()" class="mt-5">
+    <h1 class="h3 mb-3 fw-normal">
+      <i class="fa fa-user"></i>
+      Sign up
+    </h1>
+
+    <div class="form-floating">
+      <input formControlName="first_name" type="text" class="form-control" placeholder="First name" required>
+      <label for="floatingInput">First name</label>
+    </div>
+    <div class="form-floating">
+      <input formControlName="last_name" type="text" class="form-control" placeholder="Last name" required>
+      <label for="floatingInput">Last name</label>
+    </div>
+    <div class="form-floating">
+      <input formControlName="email" type="email" class="form-control" placeholder="name@example.com" required email>
+      <label for="floatingInput">Email</label>
+    </div>
+    <div class="form-floating">
+      <input formControlName="pass" type="password" class="form-control" placeholder="Password" required minlength="4">
+      <label for="floatingPassword">Password</label>
+    </div>
+
+    <button class="w-100 btn btn-lg btn-primary" [disabled]="registerForm.invalid" type="submit">Sign up</button>
+  </form>
+</main>

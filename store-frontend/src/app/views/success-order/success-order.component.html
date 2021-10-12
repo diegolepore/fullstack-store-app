@@ -1,0 +1,62 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 mx-auto mt-5">
+      <div class="payment">
+        <div class="payment_header bg-success">
+          <div class="check"><i class="fa fa-check text-success" aria-hidden="true"></i></div>
+        </div>
+        <div class="content">
+          <h1>Payment Success! 🎉 </h1>
+          <p class="my-4">You'll receive an email with the invoice and the tracking information. If you have any question just let
+            us know and we'll be more than happy to help you!</p>
+          <a routerLink="/" class="btn btn-primary text-decoration-none text-white">
+            <i class="fa fa-arrow-left me-2"></i>
+            Continue shopping
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<style lang="scss">
+  .payment {
+    border: 1px solid #f2f2f2;
+    height: auto;
+    padding-bottom: 30px;
+    border-radius: 0.25rem;
+    background: #fff;
+  }
+
+  .payment_header {
+    padding: 20px;
+    border-radius: 0.25rem 0.25rem 0px 0px;
+
+  }
+
+  .check {
+    margin: 0px auto;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background: #fff;
+    text-align: center;
+  }
+
+  .check i {
+    vertical-align: middle;
+    line-height: 50px;
+    font-size: 30px;
+  }
+
+  .content {
+    text-align: center;
+    padding: 0 20px;
+  }
+
+  .content h1 {
+    font-size: 25px;
+    padding-top: 25px;
+  }
+</style>

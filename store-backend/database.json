@@ -1,0 +1,37 @@
+{
+  "production": {
+    "driver": "pg",
+    "host": "storefront-production-db-instance-1.ctnebqnvkqjx.eu-west-3.rds.amazonaws.com",
+    "database": "storefront_production_db",
+    "user": "full_stack_user",
+    "password": "Pass1234"
+  },
+  "staging": {
+    "driver": "pg",
+    "host": "127.0.0.1",
+    "database": "storefront_test_db",
+    "user": "full_stack_user",
+    "password": "Pass1234"
+  },
+  "dev": {
+    "driver": "pg",
+    "host": "127.0.0.1",
+    "database": "storefront_db",
+    "user": "full_stack_user",
+    "password": "Pass1234"
+  },
+  "test_dev": {
+    "driver": "pg",
+    "host": "127.0.0.1",
+    "database": "storefront_test_db",
+    "user": "full_stack_user",
+    "password": "Pass1234"
+  },
+  "test_aws": {
+    "driver": "pg",
+    "host": "db",
+    "database": "storefront_test_db",
+    "user": "full_stack_user",
+    "password": "123456"
+  }
+}

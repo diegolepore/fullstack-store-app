@@ -1,0 +1,94 @@
+<section *ngIf="product" class="my-5">
+  <div *ngIf="showAddToCartAlert" class="alert alert-success alert-dismissible fade show" role="alert">
+    Your product has been successfully added to the cart!
+    <a routerLink="/cart">
+      Go to cart
+    </a>
+    <button type="button" class="btn-close" (click)="showAddToCartAlert = false" aria-label="Close"></button>
+  </div>
+
+  <div *ngIf="isLoading" class="d-flex justify-content-center">
+    <div class="spinner-border text-success" role="status">
+    </div>
+  </div>
+  <div *ngIf="productAlreadyInCartMessage" class="alert alert-danger alert-dismissible fade show" role="alert">
+    {{ productAlreadyInCartMessage }}
+    <button type="button" class="btn-close" (click)="productAlreadyInCartMessage = ''" aria-label="Close"></button>
+  </div>
+
+  <div class="row">
+    <div class="col-md-6 mb-4 mb-md-0">
+
+      <div id="mdb-lightbox-ui"></div>
+
+      <div class="mdb-lightbox">
+
+        <div class="row product-gallery mx-1">
+
+          <div class="col-12 mb-0">
+            <figure class="d-flex justify-content-center view overlay rounded z-depth-1 main-img">
+              <img src="{{ product.image_url }}" width="100%" class="product_image ma-auto img-fluid z-depth-1">
+            </figure>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+    <div class="col-md-6">
+
+      <h5>{{ product.name }}</h5>
+      <p class="mb-2 text-muted text-uppercase small">{{ product.category }}</p>
+      <p><span class="mr-1"><strong>{{ product.price }}€</strong></span></p>
+      <p class="pt-1">
+        {{ product.description }}
+      </p>
+      <hr>
+      <div *ngIf="access_token">
+        <div class="table-responsive mb-2">
+          <table class="table table-sm table-borderless">
+            <tbody>
+              <tr>
+                <td class="pl-0 pb-0 w-25">Quantity</td>
+              </tr>
+              <tr>
+                <td class="pl-0">
+                  <div class="def-number-input number-input safari_only mb-0">
+                    <form #form="ngForm">
+                      <button type="button" (click)="stepDown()" class="minus">
+                        <i class="fa fa-minus"></i>
+                      </button>
+                      <input class="quantity" min="1" name="quantity" value="1" type="number" readonly [(ngModel)]="quantity">
+                      <button type="button" (click)="stepUp()" class="plus">
+                        <i class="fa fa-plus"></i>
+                      </button>
+                    </form>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <button type="button" class="w-100 btn btn-lg btn-primary" (click)="addToCart()">
+          <i class="fa fa-shopping-cart me-2"></i>
+          Add to cart
+        </button>
+        </div>
+<div *ngIf="!access_token">
+  <a routerLink="/login" class="btn btn-success">
+    <i class="fa fa-lock me-1"></i>
+    Login in order to buy this item
+  </a>
+</div>
+    </div>
+  </div>
+
+</section>
+<!--Section: Block Content-->
+
+<style lang="scss">
+.product_image {
+  object-fit: contain;
+  height: 400px;
+}
+</style>
