@@ -37,6 +37,14 @@ jobs:
           command: |
             npm run backend:test
       - run:
+          name: Frontend Build
+          command: |
+            npm run frontend:build
+      - run:
+          name: Backend Build
+          command: |
+            npm run backend:build
+      - run:
           name: Deploy Frontend to S3 bucket
           command: |
             npm run frontend:deploy
