@@ -1,0 +1,16 @@
+branch-defaults:
+  main:
+    environment: storefront-backend-dev
+global:
+  application_name: storefront-backend
+  branch: null
+  default_ec2_keyname: diego-ec2-key-pair
+  default_platform: Node.js 14 running on 64bit Amazon Linux 2
+  default_region: eu-west-3
+  include_git_submodules: true
+  instance_profile: null
+  platform_name: null
+  platform_version: null
+  repository: null
+  sc: git
+  workspace_type: Application
