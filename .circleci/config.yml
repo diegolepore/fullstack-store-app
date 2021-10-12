@@ -14,6 +14,13 @@ jobs:
       - node/install
       - checkout
       - aws-cli/setup
+      - run:
+          name: Installing deployment dependencies
+          working_directory: /
+          command: |
+            sudo apt-get -y -qq update
+            sudo apt-get install python3-pip python3-dev build-essential
+            sudo pip3 install awsebcli
       # - run:
       #     name: Frontend Install
       #     command: |
@@ -48,7 +55,6 @@ jobs:
       #       npm run frontend:deploy
       - run:
           name: Deploy Backend to EB
-          working_directory: store-backend/
           command: |
-            eb deploy storefront-backend-dev
+            npm run backend:deploy
 
