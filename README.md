@@ -56,7 +56,4 @@ The screenshots showing the state of the different Amazon Web Services can be fo
 ### Successful pipeline (2)
 ![Successful pipeline 2](https://raw.githubusercontent.com/diegolepore/fullstack-store-app/master/screenshots/Circle%20CI/3-successfull-pipeline.png)
 
-### Successful pipeline (3)
-![Successful pipeline 3](https://raw.githubusercontent.com/diegolepore/fullstack-store-app/master/screenshots/Circle%20CI/4-successfull-pipeline.png)
-
 
