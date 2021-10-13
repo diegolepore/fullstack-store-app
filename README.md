@@ -1,3 +1,5 @@
+[![Store Full Stack Application](https://circleci.com/gh/diegolepore/fullstack-store-app.svg?style=svg)](https://app.circleci.com/pipelines/github/diegolepore/fullstack-store-app)
+
 ## Documentation and screenshots
 
 > The _**Front-end app**_ is available in the following **AWS S3** bucket domain: http://store-frontend-app.s3-website.eu-west-3.amazonaws.com/
@@ -34,11 +36,8 @@ The screenshots showing the state of the different Amazon Web Services can be fo
 #### Health OK
 ![health-OK](https://raw.githubusercontent.com/diegolepore/fullstack-store-app/master/screenshots/EB/1-health-OK.png)
 
-#### Production environment variables
-![EB-production-env-variables](https://raw.githubusercontent.com/diegolepore/fullstack-store-app/master/screenshots/EB/2-EB-production-env-variables.png)
-
 ## ✅ S3
-#### Bucket list (pun intended 😁)
+#### Bucket list
 ![buckets-list](https://raw.githubusercontent.com/diegolepore/fullstack-store-app/master/screenshots/S3/1-buckets-list.png)
 
 #### Bucket static files
